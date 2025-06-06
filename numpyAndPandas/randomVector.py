@@ -6,6 +6,9 @@ vector = np.random.randint(1,30, size=30)
 # Calculate the mean
 mean_value = np.mean(vector)
 
+round_value = round(mean_value, 4)
+
 # Print the vector and the mean
 print("Random Vector:\n", vector)
 print("\nMean Value:", mean_value)
+print("\nMean Value:", round_value)
