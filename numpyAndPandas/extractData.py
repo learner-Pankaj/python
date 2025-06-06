@@ -1,6 +1,10 @@
 import numpy as np
 
-data = np.genfromtxt("D:/Edureka-AWS-course/handsOnPython/datasets_v1.0/SalaryGender.csv", delimiter=',', skip_header=1, dtype=None, encoding='utf-8')
+#Load numerical data only from the column
+data = np.genfromtxt("D:/DevOps/Edureka-AWS-course/handsOnPython/datasets_v1.0/SalaryGender.csv", delimiter=',', skip_header=1, dtype=None, encoding='utf-8')
+
+#type of the data
+print(type(data))
 
 salary = np.array([row[0] for row in data])
 gender = np.array([row[1] for row in data])
