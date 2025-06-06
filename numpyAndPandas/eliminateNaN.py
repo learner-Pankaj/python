@@ -10,4 +10,3 @@ filterNaN = arr[~np.isnan(arr)]
 
 print("After removing NaN from the Array")
 print(filterNaN)
-
